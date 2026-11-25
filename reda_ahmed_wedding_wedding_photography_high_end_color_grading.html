@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REDA AHMED WEDDING | Wedding Photography & High-End Color Grading</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Cairo & Amiri for Arabic, Cinzel & Playfair Display for Luxury Brand & Tagline -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,700;1,700&family=Cairo:wght@300;400;500;600;700;800&family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#09090b',
+                        charcoal: '#121216',
+                        cardbg: '#18181d',
+                        gold: {
+                            400: '#e5c158',
+                            500: '#d4af37',
+                            600: '#b59224',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                        arabicSerif: ['Amiri', 'serif'],
+                        brand: ['Cinzel', 'serif'],
+                        editorial: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #09090b;
+            color: #f4f4f5;
+            font-family: 'Cairo', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #09090b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #27272a;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d4af37;
+        }
+
+        /* Glassmorphism & Luxury Accents */
+        .glass-nav {
+            background: rgba(9, 9, 11, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .glass-card {
+            background: linear-gradient(145deg, rgba(24, 24, 29, 0.9), rgba(15, 15, 19, 0.95));
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(212, 175, 55, 0.45);
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8), 0 0 25px rgba(212, 175, 55, 0.1);
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #f3e5ab 0%, #d4af37 50%, #aa821c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-btn {
+            background: linear-gradient(135deg, #d4af37 0%, #b59224 100%);
+            color: #09090b;
+            transition: all 0.3s ease;
+        }
+
+        .gold-btn:hover {
+            background: linear-gradient(135deg, #e5c158 0%, #d4af37 100%);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .session-img-zoom {
+            transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .glass-card:hover .session-img-zoom {
+            transform: scale(1.07);
+        }
+
+        /* Subtle Pulse for Floating Contact */
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); opacity: 0.7; }
+            70% { transform: scale(1.35); opacity: 0; }
+            100% { transform: scale(1.35); opacity: 0; }
+        }
+        .animate-pulse-ring::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 9999px;
+            background-color: inherit;
+            z-index: -1;
+            animation: pulse-ring 2s infinite;
+        }
+
+        /* Before/After Color Grading Comparison Slider */
+        .comparison-slider-wrapper {
+            position: relative;
+            overflow: hidden;
+            user-select: none;
+            touch-action: pan-y;
+        }
+        .raw-before-filter {
+            filter: saturate(0.42) contrast(0.82) brightness(1.04) sepia(0.08);
+        }
+        .graded-after-filter {
+            filter: saturate(1.22) contrast(1.12) brightness(1.02);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold-500 selection:text-obsidian">
+
+    <!-- ==================== NAVIGATION HEADER ==================== -->
+    <header class="fixed top-0 inset-x-0 z-40 glass-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Identity -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center text-obsidian shadow-lg shadow-gold-500/20 group-hover:rotate-6 transition-transform shrink-0">
+                        <i class="fa-solid fa-camera-retro text-xl"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex items-center gap-1.5" dir="ltr">
+                            <span class="font-brand text-base sm:text-xl font-extrabold tracking-wider text-white leading-none">REDA AHMED</span>
+                            <span class="font-brand text-xs sm:text-sm font-bold tracking-widest gold-gradient-text leading-none border-l border-gold-500/40 pl-1.5">WEDDING</span>
+                        </div>
+                        <span class="font-editorial italic text-[10px] sm:text-xs text-gold-400/90 tracking-wide mt-1" dir="ltr">Wedding Photography &amp; High-End Color Grading</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex items-center gap-6 text-sm font-medium">
+                    <a href="#home" class="text-zinc-200 hover:text-gold-400 transition-colors">الرئيسية</a>
+                    <a href="#color-grading" class="text-zinc-200 hover:text-gold-400 transition-colors">معالجة الألوان السينمائية</a>
+                    <a href="#sessions" class="text-zinc-200 hover:text-gold-400 transition-colors">سيشنات الزفاف</a>
+                    <a href="#packages" class="text-zinc-200 hover:text-gold-400 transition-colors">الباقات</a>
+                    <a href="#contact" class="text-zinc-200 hover:text-gold-400 transition-colors">تواصل واحجز الآن</a>
+                </nav>
+
+                <!-- Action Buttons -->
+                <div class="flex items-center gap-2 sm:gap-3">
+                    <!-- Studio Manager Button (Add/Edit Sessions) -->
+                    <button onclick="openStudioModal()" class="px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl bg-zinc-900 border border-gold-500/30 hover:border-gold-500 text-gold-400 text-xs sm:text-sm font-semibold flex items-center gap-2 transition-all" title="إضافة أو تعديل السيشنات">
+                        <i class="fa-solid fa-plus-circle"></i>
+                        <span class="hidden sm:inline">إدارة السيشنات</span>
+                    </button>
+
+                    <!-- Direct Call CTA -->
+                    <a href="tel:01102741005" class="gold-btn px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 shadow-lg">
+                        <i class="fa-solid fa-phone-volume animate-bounce"></i>
+                        <span dir="ltr">01102741005</span>
+                    </a>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-zinc-900 text-zinc-300 hover:text-gold-400 border border-zinc-800">
+                        <i class="fa-solid fa-bars text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-charcoal border-b border-zinc-800 px-4 pt-2 pb-5 space-y-2">
+            <a href="#home" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-zinc-200 hover:bg-zinc-800/70 hover:text-gold-400">الرئيسية</a>
+            <a href="#color-grading" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-zinc-200 hover:bg-zinc-800/70 hover:text-gold-400">معالجة الألوان السينمائية (Color Grading)</a>
+            <a href="#sessions" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-zinc-200 hover:bg-zinc-800/70 hover:text-gold-400">سيشنات الزفاف (كل سيشن لوحده)</a>
+            <a href="#packages" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-zinc-200 hover:bg-zinc-800/70 hover:text-gold-400">باقات الزفاف الاحترافية</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-zinc-200 hover:bg-zinc-800/70 hover:text-gold-400">خدمة الاتصال والحجز</a>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="relative min-h-[92vh] flex items-center pt-24 pb-16 overflow-hidden">
+        <!-- Ambient Background Image & Overlays -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1920&q=80" 
+                 alt="REDA AHMED WEDDING - Wedding Photography & High-End Color Grading" 
+                 class="w-full h-full object-cover opacity-30 scale-105"
+                 onerror="this.src='https://placehold.co/1920x1080/09090b/d4af37?text=REDA+AHMED+WEDDING'">
+            <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/80 to-obsidian/60"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-obsidian via-transparent to-obsidian/90"></div>
+        </div>
+
+        <!-- Decorative Gold Glow -->
+        <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-gold-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-3xl">
+                <!-- Luxury Badge -->
+                <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-zinc-900/90 border border-gold-500/30 text-gold-400 text-xs sm:text-sm font-medium mb-6 backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-gold-500 animate-ping"></span>
+                    <span>تصوير زفاف احترافي ومعالجة ألوان سينمائية فاخرة</span>
+                </div>
+
+                <!-- Brand Name Display -->
+                <h1 class="font-brand text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-wider text-white mb-3 leading-tight" dir="ltr">
+                    REDA AHMED <span class="block sm:inline gold-gradient-text">WEDDING</span>
+                </h1>
+                
+                <!-- Prominent English Tagline -->
+                <div class="inline-block border-r-2 sm:border-r-0 sm:border-l-2 border-gold-500 pr-3 sm:pr-0 sm:pl-4 mb-6" dir="ltr">
+                    <p class="font-editorial italic text-xl sm:text-2xl lg:text-3xl font-semibold text-gold-400 tracking-wide">
+                        Wedding Photography &amp; High-End Color Grading
+                    </p>
+                </div>
+
+                <h2 class="text-2xl sm:text-3xl font-bold text-zinc-100 mb-5 leading-snug">
+                    نوثّق ليلة العمر بأرقى معايير التصوير الفوتوغرافي وتصحيح الألوان السينمائي
+                </h2>
+                <p class="text-zinc-400 text-base sm:text-lg leading-relaxed mb-8 max-w-2xl">
+                    مرحباً بك في الموقع الرسمي لـ <strong class="text-gold-400" dir="ltr">REDA AHMED WEDDING</strong>. استعرض جميع سيشنات الزفاف والخطوبة والبورتريه والمعالجة اللونية الاحترافية—كل سيشن معروض في ألبوم مستقل بكل تفاصيله وصوره عالية الدقة.
+                </p>
+
+                <!-- Primary CTAs -->
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="#sessions" class="gold-btn px-7 py-4 rounded-2xl font-bold text-base flex items-center gap-3 shadow-xl shadow-gold-500/15">
+                        <i class="fa-solid fa-images"></i>
+                        <span>مشاهدة السيشنات الاحترافية</span>
+                    </a>
+                    
+                    <a href="https://wa.me/201102741005?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20REDA%20AHMED%20WEDDING%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AD%D8%AC%D8%B2%20%D8%B3%D9%8A%D8%B4%D9%86%20%D8%AA%D8%B5%D9%88%D9%8A%D8%B1" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="px-7 py-4 rounded-2xl bg-emerald-600/20 hover:bg-emerald-600/30 border border-emerald-500/40 text-emerald-400 font-bold text-base flex items-center gap-3 transition-all">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>تواصل واتساب مباشر</span>
+                    </a>
+
+                    <a href="tel:01102741005" class="px-6 py-4 rounded-2xl bg-zinc-900/90 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 font-semibold text-base flex items-center gap-3 transition-all">
+                        <i class="fa-solid fa-phone text-gold-400"></i>
+                        <span dir="ltr">01102741005</span>
+                    </a>
+                </div>
+
+                <!-- Quick Stats Bar -->
+                <div class="grid grid-cols-3 gap-4 sm:gap-8 mt-12 pt-8 border-t border-zinc-800/80 max-w-xl">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold gold-gradient-text" id="statSessionsCount">+120</div>
+                        <div class="text-xs sm:text-sm text-zinc-400 mt-1">سيشن احترافي مكتمل</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold gold-gradient-text">4K / RAW</div>
+                        <div class="text-xs sm:text-sm text-zinc-400 mt-1">أعلى جودة ومعالجة لونية</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold gold-gradient-text">100%</div>
+                        <div class="text-xs sm:text-sm text-zinc-400 mt-1">التزام بمواعيد التسليم</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== HIGH-END COLOR GRADING BEFORE/AFTER SECTION ==================== -->
+    <section id="color-grading" class="py-20 bg-obsidian relative border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Text & Color Grading Info (5 Cols) -->
+                <div class="lg:col-span-5 space-y-5">
+                    <span class="font-editorial italic text-gold-400 text-base sm:text-lg font-semibold tracking-wide block" dir="ltr">
+                        High-End Color Grading &amp; Retouching
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+                        معالجة الألوان السينمائية <span class="gold-gradient-text">(قبل وبعد)</span>
+                    </h2>
+                    <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+                        نحن لا نكتفي بالتقاط الصورة فحسب، بل نمنح كل لقطة هوية بصرية سينمائية متكاملة عبر معالجة احترافية للألوان (High-End Color Grading)، توازن الإضاءة، ونعومة البشرة الطبيعية دون فقدان التفاصيل.
+                    </p>
+
+                    <div class="space-y-3 pt-2">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-gold-500/15 border border-gold-500/30 text-gold-400 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-wand-magic-sparkles text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">تناغم لوني سينمائي (Cinematic Skin Tones)</h4>
+                                <p class="text-xs text-zinc-400 mt-0.5">إبراز جمال ألوان البشرة والملابس والإضاءة المحيطة بدقة عالية.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-gold-500/15 border border-gold-500/30 text-gold-400 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-eye text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">اسحب المؤشر للمقارنة الحية</h4>
+                                <p class="text-xs text-zinc-400 mt-0.5">حرك الخط الذهبي يميناً ويساراً لمشاهدة الفرق بين الصورة الخام (RAW) والمعالجة النهائية.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Preset Switcher Buttons -->
+                    <div class="flex flex-wrap gap-2 pt-3">
+                        <button onclick="switchGradingSample(0)" id="gradeSampleBtn0" class="grade-sample-btn px-4 py-2 rounded-xl text-xs font-bold bg-gold-500 text-obsidian transition-all">
+                            1. زفاف كلاسيك ذهبي
+                        </button>
+                        <button onclick="switchGradingSample(1)" id="gradeSampleBtn1" class="grade-sample-btn px-4 py-2 rounded-xl text-xs font-semibold bg-zinc-900 text-zinc-300 border border-zinc-800 hover:border-gold-500/40 transition-all">
+                            2. بورتريه عروس سينمائي
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Interactive Before/After Slider (7 Cols) -->
+                <div class="lg:col-span-7">
+                    <div id="comparisonContainer" class="comparison-slider-wrapper relative w-full h-[360px] sm:h-[460px] rounded-3xl border border-gold-500/30 shadow-2xl shadow-black cursor-ew-resize" dir="ltr">
+                        
+                        <!-- AFTER IMAGE (Full Layer - High-End Color Graded) -->
+                        <img id="afterGradeImg" 
+                             src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=90" 
+                             alt="After High-End Color Grading"
+                             class="absolute inset-0 w-full h-full object-cover graded-after-filter pointer-events-none">
+                        
+                        <!-- After Label -->
+                        <span class="absolute top-4 right-4 z-10 px-3.5 py-1.5 rounded-full bg-black/75 backdrop-blur-md border border-gold-500/40 text-gold-400 text-xs font-bold tracking-wider">
+                            AFTER • HIGH-END COLOR GRADING
+                        </span>
+
+                        <!-- BEFORE IMAGE (Clipped Layer - RAW Flat Profile) -->
+                        <div id="beforeClipLayer" class="absolute inset-0 overflow-hidden pointer-events-none" style="width: 50%;">
+                            <img id="beforeGradeImg" 
+                                 src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=90" 
+                                 alt="Before RAW Flat Photo"
+                                 class="absolute inset-0 w-full h-full object-cover raw-before-filter max-w-none"
+                                 style="width: 100%;">
+                            <!-- Before Label -->
+                            <span class="absolute top-4 left-4 z-10 px-3.5 py-1.5 rounded-full bg-black/75 backdrop-blur-md border border-zinc-700 text-zinc-300 text-xs font-bold tracking-wider">
+                                BEFORE • RAW CAMERA
+                            </span>
+                        </div>
+
+                        <!-- Vertical Gold Divider Line & Handle -->
+                        <div id="sliderDividerLine" class="absolute top-0 bottom-0 w-0.5 bg-gold-400 shadow-[0_0_15px_rgba(212,175,55,0.9)] pointer-events-none z-20" style="left: 50%;">
+                            <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-11 h-11 rounded-full gold-btn border-2 border-white flex items-center justify-center shadow-2xl">
+                                <i class="fa-solid fa-arrows-left-right text-sm text-obsidian"></i>
+                            </div>
+                        </div>
+
+                        <!-- Accessible Range Input Overlay for Smooth Mouse & Touch Dragging -->
+                        <input type="range" min="5" max="95" value="50" id="colorGradeRange"
+                               oninput="updateComparisonSlider(this.value)"
+                               aria-label="مقارنة قبل وبعد معالجة الألوان"
+                               class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30 m-0">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SESSIONS PORTFOLIO (كل سيشن لوحده) ==================== -->
+    <section id="sessions" class="py-20 bg-charcoal relative border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+                <div>
+                    <span class="font-editorial italic text-gold-400 text-base font-semibold tracking-wide block mb-1" dir="ltr">Wedding Photography &amp; High-End Color Grading</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">ألبومات السيشنات الاحترافية <span class="text-gold-400">(كل سيشن لوحده)</span></h2>
+                    <p class="text-zinc-400 mt-2 max-w-2xl text-sm sm:text-base">
+                        اضغط على أي سيشن لفتح الألبوم الخاص به ومشاهدة جميع الصور بجودة فائقة، كما يمكنك إضافة سيشناتك الجديدة بسهولة.
+                    </p>
+                </div>
+
+                <!-- Add New Session Quick Button -->
+                <button onclick="openStudioModal()" class="self-start md:self-auto gold-btn px-5 py-3 rounded-xl font-bold text-sm flex items-center gap-2 shadow-lg">
+                    <i class="fa-solid fa-folder-plus text-base"></i>
+                    <span>+ إضافة سيشن جديد للموقع</span>
+                </button>
+            </div>
+
+            <!-- Category Filter Tabs & Search -->
+            <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 mb-10">
+                <div id="categoryFilters" class="flex flex-wrap items-center gap-2">
+                    <button onclick="filterSessions('all')" data-cat="all" class="filter-btn active px-5 py-2.5 rounded-xl text-sm font-bold bg-gold-500 text-obsidian transition-all">
+                        الكل
+                    </button>
+                    <button onclick="filterSessions('wedding')" data-cat="wedding" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold bg-zinc-900 text-zinc-300 hover:text-gold-400 border border-zinc-800 transition-all">
+                        حفلات زفاف (Weddings)
+                    </button>
+                    <button onclick="filterSessions('engagement')" data-cat="engagement" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold bg-zinc-900 text-zinc-300 hover:text-gold-400 border border-zinc-800 transition-all">
+                        خطوبة وكتب كتاب
+                    </button>
+                    <button onclick="filterSessions('bridal')" data-cat="bridal" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold bg-zinc-900 text-zinc-300 hover:text-gold-400 border border-zinc-800 transition-all">
+                        فوتوسيشن عرائس (Bridal)
+                    </button>
+                    <button onclick="filterSessions('colorgrading')" data-cat="colorgrading" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold bg-zinc-900 text-zinc-300 hover:text-gold-400 border border-zinc-800 transition-all">
+                        معالجة ألوان (Color Grading)
+                    </button>
+                    <button onclick="filterSessions('portrait')" data-cat="portrait" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold bg-zinc-900 text-zinc-300 hover:text-gold-400 border border-zinc-800 transition-all">
+                        بورتريه وفاشون
+                    </button>
+                </div>
+
+                <!-- Search Input -->
+                <div class="relative w-full lg:w-72">
+                    <input type="text" id="sessionSearchInput" oninput="renderSessionsGrid()" placeholder="ابحث باسم العروسين أو المكان..." 
+                           class="w-full bg-zinc-900/90 border border-zinc-800 focus:border-gold-500 rounded-xl py-2.5 pr-10 pl-4 text-sm text-white placeholder-zinc-500 outline-none transition-colors">
+                    <i class="fa-solid fa-magnifying-glass absolute right-3.5 top-1/2 -translate-y-1/2 text-zinc-500 text-sm"></i>
+                </div>
+            </div>
+
+            <!-- Sessions Grid Container -->
+            <div id="sessionsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+                <!-- Populated dynamically via JavaScript -->
+            </div>
+
+            <!-- Empty State (if search/filter yields no results) -->
+            <div id="emptySessionsState" class="hidden text-center py-16 bg-zinc-900/40 rounded-3xl border border-zinc-800/80">
+                <div class="w-16 h-16 rounded-2xl bg-zinc-800/80 text-gold-400 flex items-center justify-center mx-auto mb-4 text-2xl">
+                    <i class="fa-regular fa-images"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">لا توجد سيشنات مطابقة لبحثك</h3>
+                <p class="text-zinc-400 text-sm mb-6">جرب اختيار تصنيف آخر أو أضف سيشن جديد الآن.</p>
+                <button onclick="filterSessions('all')" class="px-6 py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-semibold">
+                    عرض جميع السيشنات
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PACKAGES & SERVICES SECTION ==================== -->
+    <section id="packages" class="py-20 bg-obsidian relative border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-gold-400 text-sm font-bold tracking-wider uppercase block mb-2" dir="ltr">PROFESSIONAL WEDDING PACKAGES</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">باقات الزفاف والسيشنات الاحترافية</h2>
+                <p class="text-zinc-400 text-sm sm:text-base">
+                    باقات مصممة بعناية لتغطية أجمل تفاصيل يومك بأعلى جودة تصوير فوتوغرافي وفيديو سينمائي.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+                <!-- Package 1 -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-gold-500/10 border border-gold-500/30 text-gold-400 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">باقة الخطوبة وكتب الكتاب</h3>
+                        <p class="text-zinc-400 text-sm mb-6">مثالية لجلسات الخطوبة، كتب الكتاب، والفوتوسيشن الخارجي.</p>
+                        <ul class="space-y-3 text-sm text-zinc-300 mb-8">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>سيشن خارجي + تغطية كتب الكتاب أو الحفل</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>تسليم 40 صورة معالجة احترافية (High-End Retouch)</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>إضاءات احترافية متكاملة للوكيشن</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>تسليم جميع الصور الأصلية بأعلى جودة</span></li>
+                        </ul>
+                    </div>
+                    <button onclick="quickBookPackage('باقة الخطوبة وكتب الكتاب')" class="w-full py-3.5 rounded-xl bg-zinc-900 hover:bg-gold-500 hover:text-obsidian text-gold-400 border border-gold-500/30 font-bold text-sm transition-all">
+                        استفسر واحجز الباقة
+                    </button>
+                </div>
+
+                <!-- Package 2 (Featured) -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between relative border-gold-500/50 shadow-2xl shadow-gold-500/10">
+                    <div class="absolute -top-3.5 left-6 px-4 py-1 rounded-full gold-btn text-xs font-extrabold shadow-md">
+                        باقة العروسين المفضلة
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-gold-500 text-obsidian flex items-center justify-center text-xl mb-5 shadow-lg shadow-gold-500/30">
+                            <i class="fa-solid fa-crown"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">باقة الزفاف الملكية VIP Wedding</h3>
+                        <p class="text-zinc-400 text-sm mb-6">تغطية شاملة من تحضيرات العروسين حتى نهاية الحفل بأحدث المعدات.</p>
+                        <ul class="space-y-3 text-sm text-zinc-200 mb-8">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>تغطية تحضيرات العروسين + سيشن الزفاف + القاعة</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>عدد غير محدود من الصور + 100 صورة معالجة فاخرة</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>فيديو برومو وريلز (Reels) سينمائي 4K</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>فوتوبوك زفاف فاخر + تابلوه خشبي هدية</span></li>
+                        </ul>
+                    </div>
+                    <button onclick="quickBookPackage('باقة الزفاف الملكية VIP Wedding')" class="w-full py-3.5 rounded-xl gold-btn font-extrabold text-sm shadow-lg">
+                        احجز موعد زفافك الآن
+                    </button>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-gold-500/10 border border-gold-500/30 text-gold-400 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">سيشن بورتريه وإطلالات احترافي</h3>
+                        <p class="text-zinc-400 text-sm mb-6">جلسات تصوير فردية، فاشون، أعياد ميلاد، وصناع المحتوى.</p>
+                        <ul class="space-y-3 text-sm text-zinc-300 mb-8">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>مدة السيشن تصل إلى ساعتين كاملتين</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>تسليم 25 صورة بتعديل ألوان سينمائي</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>إمكانية التصوير في أكثر من لوكيشن</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>تسليم سريع خلال 48 ساعة</span></li>
+                        </ul>
+                    </div>
+                    <button onclick="quickBookPackage('سيشن بورتريه وإطلالات احترافي')" class="w-full py-3.5 rounded-xl bg-zinc-900 hover:bg-gold-500 hover:text-obsidian text-gold-400 border border-gold-500/30 font-bold text-sm transition-all">
+                        احجز السيشن الخاص بك
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT & DIRECT BOOKING SECTION ==================== -->
+    <section id="contact" class="py-20 bg-charcoal relative border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                
+                <!-- Left Column: Direct Contact Info & Cards (5 Cols) -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-gold-400 text-sm font-bold tracking-wider uppercase block mb-2">خدمة الاتصال والحجز السريع</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-4">تواصل مع <span class="font-brand gold-gradient-text block sm:inline mt-1" dir="ltr">REDA AHMED WEDDING</span></h2>
+                        <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+                            نسعد بالرد على جميع استفساراتكم وحجوزات حفلات الزفاف والسيشنات على مدار الساعة. اختر وسيلة التواصل الأسرع لك:
+                        </p>
+                    </div>
+
+                    <!-- Phone Call Card -->
+                    <div class="glass-card rounded-2xl p-5 flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-gold-500/15 border border-gold-500/30 text-gold-400 flex items-center justify-center text-2xl shrink-0">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-zinc-400 font-medium">اتصال هاتفي مباشر</div>
+                                <a href="tel:01102741005" class="text-xl sm:text-2xl font-extrabold text-white hover:text-gold-400 transition-colors tracking-wider block mt-0.5" dir="ltr">
+                                    01102741005
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <a href="tel:01102741005" class="px-4 py-2 rounded-xl gold-btn text-xs font-extrabold text-center">
+                                اتصل الآن
+                            </a>
+                            <button onclick="copyPhoneNumber()" class="px-4 py-1.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-xs font-medium flex items-center justify-center gap-1.5 transition-colors">
+                                <i class="fa-regular fa-copy"></i>
+                                <span>نسخ الرقم</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp Direct Card -->
+                    <a href="https://wa.me/201102741005?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20REDA%20AHMED%20WEDDING%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%B3%D9%8A%D8%B4%D9%86%20%D8%AA%D8%B5%D9%88%D9%8A%D8%B1" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="glass-card rounded-2xl p-5 flex items-center justify-between gap-4 border-emerald-500/25 hover:border-emerald-500/60 group block">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-3xl shrink-0 group-hover:scale-110 transition-transform">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-emerald-400 font-semibold">متاح للرد السريع عبر واتساب</div>
+                                <div class="text-lg sm:text-xl font-bold text-white mt-0.5" dir="ltr">01102741005</div>
+                                <div class="text-xs text-zinc-400 mt-0.5">اضغط لبدء محادثة فورية</div>
+                            </div>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center group-hover:-translate-x-1 transition-transform">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                    </a>
+
+                    <!-- Working Hours & Location Info -->
+                    <div class="p-5 rounded-2xl bg-zinc-900/60 border border-zinc-800/80 space-y-3 text-sm">
+                        <div class="flex items-center gap-3 text-zinc-300">
+                            <i class="fa-solid fa-location-dot text-gold-400 w-5 text-center"></i>
+                            <span>متاحون لتصوير حفلات الزفاف والسيشنات في جميع المحافظات</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-zinc-300">
+                            <i class="fa-regular fa-clock text-gold-400 w-5 text-center"></i>
+                            <span>مواعيد العمل: يومياً من 10:00 صباحاً حتى 11:00 مساءً</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive Booking Form (7 Cols) -->
+                <div class="lg:col-span-7">
+                    <div class="glass-card rounded-3xl p-6 sm:p-9 border-gold-500/20">
+                        <div class="flex items-center justify-between mb-6 pb-4 border-b border-zinc-800">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">نموذج حجز زفاف أو سيشن تصوير</h3>
+                                <p class="text-xs sm:text-sm text-zinc-400 mt-1">املأ البيانات وسيتم تحويل تفاصيل حجزك مباشرة إلى واتساب <span dir="ltr">REDA AHMED WEDDING</span></p>
+                            </div>
+                            <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-gold-500/10 text-gold-400 text-xs font-bold">
+                                <i class="fa-solid fa-bolt"></i> حجز فوري
+                            </span>
+                        </div>
+
+                        <form id="bookingForm" onsubmit="handleBookingSubmit(event)" class="space-y-5">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-bold text-zinc-300 mb-2">الاسم بالكامل *</label>
+                                    <input type="text" id="clientName" required placeholder="مثال: أحمد محمود"
+                                           class="w-full bg-zinc-900/90 border border-zinc-700/80 focus:border-gold-500 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-500 outline-none transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-zinc-300 mb-2">رقم الهاتف / واتساب *</label>
+                                    <input type="tel" id="clientPhone" required placeholder="01xxxxxxxxx" dir="ltr"
+                                           class="w-full bg-zinc-900/90 border border-zinc-700/80 focus:border-gold-500 rounded-xl px-4 py-3 text-sm text-white text-right placeholder-zinc-500 outline-none transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-bold text-zinc-300 mb-2">نوع السيشن / المناسبة *</label>
+                            <select id="sessionType" class="w-full bg-zinc-900/90 border border-zinc-700/80 focus:border-gold-500 rounded-xl px-4 py-3 text-sm text-white outline-none transition-colors">
+                                <option value="حفلة زفاف (Wedding Photography)">حفلة زفاف (Wedding Photography)</option>
+                                <option value="خطوبة وكتب كتاب (Engagement)">خطوبة وكتب كتاب (Engagement)</option>
+                                <option value="فوتوسيشن عرائس (Bridal Session)">فوتوسيشن عرائس (Bridal Session)</option>
+                                <option value="معالجة ألوان سينمائية (High-End Color Grading)">معالجة ألوان سينمائية (High-End Color Grading)</option>
+                                <option value="سيشن بورتريه وفاشون">سيشن بورتريه وفاشون</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-zinc-300 mb-2">تاريخ الزفاف / السيشن</label>
+                                    <input type="date" id="sessionDate"
+                                           class="w-full bg-zinc-900/90 border border-zinc-700/80 focus:border-gold-500 rounded-xl px-4 py-3 text-sm text-white outline-none transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-zinc-300 mb-2">مكان التصوير أو تفاصيل إضافية</label>
+                                <textarea id="sessionNotes" rows="3" placeholder="اكتب أي تفاصيل تود إضافتها حول فكرة السيشن أو المكان..."
+                                          class="w-full bg-zinc-900/90 border border-zinc-700/80 focus:border-gold-500 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-500 outline-none transition-colors"></textarea>
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row items-center gap-3 pt-2">
+                                <button type="submit" class="w-full sm:flex-1 py-4 px-6 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-lg shadow-emerald-600/20 transition-all">
+                                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                                    <span>إرسال الحجز عبر واتساب (01102741005)</span>
+                                </button>
+                                <a href="tel:01102741005" class="w-full sm:w-auto py-4 px-6 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-gold-400 font-bold text-sm flex items-center justify-center gap-2 border border-zinc-700 transition-all">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>اتصال مباشر</span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-obsidian border-t border-zinc-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="text-center md:text-right">
+                    <div class="font-brand text-xl sm:text-2xl font-extrabold gold-gradient-text tracking-wider" dir="ltr">REDA AHMED WEDDING</div>
+                    <div class="font-editorial italic text-xs sm:text-sm text-gold-400/90 mt-0.5" dir="ltr">Wedding Photography &amp; High-End Color Grading</div>
+                    <p class="text-zinc-500 text-xs mt-1.5">جميع الحقوق محفوظة &copy; 2026 | تصوير حفلات الزفاف ومعالجة الألوان الاحترافية</p>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <a href="tel:01102741005" class="px-4 py-2 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-gold-500/50 text-zinc-200 text-sm font-bold flex items-center gap-2 transition-colors">
+                        <i class="fa-solid fa-phone text-gold-400"></i>
+                        <span dir="ltr">01102741005</span>
+                    </a>
+                    <a href="https://wa.me/201102741005" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-emerald-500 text-emerald-400 flex items-center justify-center transition-colors" title="واتساب">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                    </a>
+                    <a href="#sessions" class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-gold-500 text-gold-400 flex items-center justify-center transition-colors" title="ألبومات السيشنات">
+                        <i class="fa-solid fa-camera"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== FLOATING CONTACT WIDGET (WhatsApp & Call) ==================== -->
+    <div class="fixed bottom-5 left-5 z-40 flex flex-col gap-3">
+        <!-- Direct Phone Floating Button -->
+        <a href="tel:01102741005" 
+           class="w-13 h-13 sm:w-14 sm:h-14 rounded-full gold-btn flex items-center justify-center shadow-2xl shadow-gold-500/30 hover:scale-110 transition-transform"
+           title="اتصل الآن: 01102741005">
+            <i class="fa-solid fa-phone text-lg sm:text-xl"></i>
+        </a>
+
+        <!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/201102741005?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20REDA%20AHMED%20WEDDING%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%B3%D9%8A%D8%B4%D9%86%20%D8%AA%D8%B5%D9%88%D9%8A%D8%B1" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="relative animate-pulse-ring w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white flex items-center justify-center shadow-2xl shadow-emerald-500/40 hover:scale-110 transition-transform"
+           title="تواصل واتساب: 01102741005">
+            <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+        </a>
+    </div>
+
+    <!-- ==================== MODAL 1: SESSION GALLERY VIEWER (عرض السيشن كامل لوحده) ==================== -->
+    <div id="sessionViewerModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-xl overflow-y-auto">
+        <div class="min-h-screen max-w-6xl mx-auto px-4 sm:px-6 py-8">
+            
+            <!-- Top Sticky Bar inside Viewer -->
+            <div class="sticky top-0 z-20 flex flex-wrap items-center justify-between gap-4 bg-charcoal/95 backdrop-blur-md p-4 sm:px-6 rounded-2xl border border-zinc-800 mb-8 shadow-2xl">
+                <div>
+                    <div class="flex items-center gap-2.5">
+                        <span id="viewerCategoryBadge" class="px-3 py-0.5 rounded-full bg-gold-500/15 text-gold-400 text-xs font-bold">تصنيف</span>
+                        <span id="viewerDateLocation" class="text-xs text-zinc-400">التاريخ والمكان</span>
+                    </div>
+                    <h3 id="viewerTitle" class="text-xl sm:text-2xl font-extrabold text-white mt-1">عنوان السيشن</h3>
+                </div>
+
+                <div class="flex items-center gap-2.5">
+                    <a id="viewerWhatsappBtn" href="#" target="_blank" rel="noopener noreferrer"
+                       class="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs sm:text-sm font-bold flex items-center gap-2 transition-colors">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>احجز سيشن مشابه</span>
+                    </a>
+                    <button onclick="closeSessionViewer()" class="w-10 h-10 rounded-xl bg-zinc-800 hover:bg-red-500/20 hover:text-red-400 text-zinc-300 flex items-center justify-center transition-colors" title="إغلاق">
+                        <i class="fa-solid fa-xmark text-lg"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Session Story / Description -->
+            <div class="bg-zinc-900/60 border border-zinc-800/80 rounded-2xl p-5 mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <p id="viewerDescription" class="text-zinc-300 text-sm sm:text-base leading-relaxed"></p>
+                <span id="viewerPhotoCount" class="text-xs font-bold text-gold-400 bg-gold-500/10 px-3.5 py-2 rounded-xl shrink-0 self-start sm:self-center"></span>
+            </div>
+
+            <!-- Session Photos Grid (All photos of this single session) -->
+            <div id="viewerPhotosGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pb-12">
+                <!-- Photos populated via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== LIGHTBOX ZOOM & NAVIGATION FOR SINGLE PHOTO ==================== -->
+    <div id="photoLightbox" onclick="closeLightbox()" class="fixed inset-0 z-[60] hidden bg-black/95 backdrop-blur-md flex items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-5 left-5 w-11 h-11 rounded-full bg-zinc-800/90 text-white hover:bg-gold-500 hover:text-obsidian flex items-center justify-center text-xl transition-colors z-10">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Previous Photo Button (Right in RTL) -->
+        <button onclick="event.stopPropagation(); navigateLightbox(-1)" class="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-zinc-900/90 border border-gold-500/40 text-gold-400 hover:bg-gold-500 hover:text-obsidian flex items-center justify-center text-lg transition-all z-10" title="الصورة السابقة">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="flex flex-col items-center max-w-full" onclick="event.stopPropagation()">
+            <img id="lightboxImage" src="" alt="صورة مكبرة" class="max-w-full max-h-[82vh] rounded-2xl shadow-2xl border border-zinc-800 object-contain">
+            <div id="lightboxCounter" class="mt-3 px-4 py-1 rounded-full bg-zinc-900/90 border border-zinc-800 text-gold-400 text-xs font-bold">1 / 1</div>
+        </div>
+
+        <!-- Next Photo Button (Left in RTL) -->
+        <button onclick="event.stopPropagation(); navigateLightbox(1)" class="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-zinc-900/90 border border-gold-500/40 text-gold-400 hover:bg-gold-500 hover:text-obsidian flex items-center justify-center text-lg transition-all z-10" title="الصورة التالية">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+    </div>
+
+    <!-- ==================== MODAL 2: STUDIO MANAGER (إدارة وإضافة السيشنات) ==================== -->
+    <div id="studioManagerModal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md overflow-y-auto">
+        <div class="min-h-screen max-w-4xl mx-auto px-4 py-8 flex items-center justify-center">
+            <div class="w-full bg-charcoal border border-zinc-800 rounded-3xl p-6 sm:p-8 shadow-2xl">
+                
+                <!-- Header -->
+                <div class="flex items-center justify-between pb-5 border-b border-zinc-800 mb-6">
+                    <div>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-white flex items-center gap-2.5">
+                            <i class="fa-solid fa-sliders text-gold-400"></i>
+                            <span>لوحة تحكم السيشنات — <span dir="ltr" class="font-brand text-gold-400">REDA AHMED WEDDING</span></span>
+                        </h3>
+                        <p class="text-xs sm:text-sm text-zinc-400 mt-1">أضف سيشنات الزفاف والخطوبة الجديدة بصورها الخاصة ليظهر كل سيشن في ألبوم مستقل</p>
+                    </div>
+                    <button onclick="closeStudioModal()" class="w-10 h-10 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-300 flex items-center justify-center">
+                        <i class="fa-solid fa-xmark text-lg"></i>
+                    </button>
+                </div>
+
+                <!-- Add / Edit Session Form -->
+                <form id="sessionManagerForm" onsubmit="saveNewSession(event)" class="space-y-5 mb-8">
+                    <input type="hidden" id="editSessionId" value="">
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-zinc-300 mb-1.5">اسم السيشن / العروسين *</label>
+                            <input type="text" id="newSessionTitle" required placeholder="مثال: سيشن زفاف كريم ونور - قصر البارون"
+                                   class="w-full bg-zinc-900 border border-zinc-700 focus:border-gold-500 rounded-xl px-4 py-2.5 text-sm text-white outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-zinc-300 mb-1.5">تصنيف السيشن *</label>
+                            <select id="newSessionCategory" class="w-full bg-zinc-900 border border-zinc-700 focus:border-gold-500 rounded-xl px-4 py-2.5 text-sm text-white outline-none">
+                                <option value="wedding">حفلات زفاف (Weddings)</option>
+                                <option value="engagement">خطوبة وكتب كتاب</option>
+                                <option value="bridal">فوتوسيشن عرائس (Bridal)</option>
+                                <option value="colorgrading">معالجة ألوان (High-End Color Grading)</option>
+                                <option value="portrait">بورتريه وفاشون</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-zinc-300 mb-1.5">المكان / التاريخ</label>
+                            <input type="text" id="newSessionMeta" placeholder="مثال: القاهرة • نوفمبر 2026"
+                                   class="w-full bg-zinc-900 border border-zinc-700 focus:border-gold-500 rounded-xl px-4 py-2.5 text-sm text-white outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-zinc-300 mb-1.5">رفع صور السيشن من جهازك (متعدد)</label>
+                            <input type="file" id="newSessionFiles" accept="image/*" multiple onchange="handleFilesPreview(event)"
+                                   class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-3 py-2 text-xs text-zinc-300 file:ml-3 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-gold-500 file:text-obsidian cursor-pointer">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-zinc-300 mb-1.5">أو أضف روابط الصور مباشرة (رابط في كل سطر)</label>
+                        <textarea id="newSessionUrls" rows="2" placeholder="https://example.com/photo1.jpg&#10;https://example.com/photo2.jpg"
+                                  class="w-full bg-zinc-900 border border-zinc-700 focus:border-gold-500 rounded-xl px-4 py-2.5 text-xs text-white outline-none" dir="ltr"></textarea>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-zinc-300 mb-1.5">وصف السيشن وتفاصيله</label>
+                        <textarea id="newSessionDesc" rows="2" placeholder="اكتب نبذة عن فكرة السيشن والإضاءة المستخدمة..."
+                                  class="w-full bg-zinc-900 border border-zinc-700 focus:border-gold-500 rounded-xl px-4 py-2.5 text-sm text-white outline-none"></textarea>
+                    </div>
+
+                    <!-- Preview of uploaded images before saving -->
+                    <div id="uploadPreviewContainer" class="hidden grid grid-cols-4 sm:grid-cols-6 gap-2 p-3 bg-zinc-900/80 rounded-xl border border-zinc-800"></div>
+
+                    <div class="flex items-center justify-end gap-3">
+                        <button type="button" onclick="resetManagerForm()" class="px-5 py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-xs font-bold">
+                            مسح الحقول
+                        </button>
+                        <button type="submit" id="saveSessionBtn" class="gold-btn px-6 py-2.5 rounded-xl text-sm font-extrabold flex items-center gap-2">
+                            <i class="fa-solid fa-floppy-disk"></i>
+                            <span>حفظ ونشر السيشن</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Existing Sessions List for Quick Management -->
+                <div class="pt-5 border-t border-zinc-800">
+                    <div class="flex items-center justify-between mb-3">
+                        <h4 class="text-sm font-bold text-zinc-300">السيشنات المنشورة حالياً (<span id="manageCount">0</span>)</h4>
+                        <button onclick="restoreDefaultSessions()" class="text-xs text-zinc-500 hover:text-gold-400 underline">
+                            استعادة السيشنات الافتراضية
+                        </button>
+                    </div>
+                    <div id="manageSessionsList" class="space-y-2.5 max-h-60 overflow-y-auto pr-1">
+                        <!-- Managed sessions list -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== TOAST NOTIFICATION ==================== -->
+    <div id="toastNotification" class="fixed top-24 left-1/2 -translate-x-1/2 z-[70] hidden bg-zinc-900 border border-gold-500/50 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 text-sm font-semibold">
+        <i class="fa-solid fa-circle-check text-gold-400 text-lg"></i>
+        <span id="toastMessage">تمت العملية بنجاح</span>
+    </div>
+
+    <!-- ==================== APPLICATION LOGIC ==================== -->
+    <script>
+        // Category Labels Map
+        const CATEGORY_NAMES = {
+            wedding: 'حفلات زفاف (Weddings)',
+            engagement: 'خطوبة وكتب كتاب',
+            bridal: 'فوتوسيشن عرائس (Bridal)',
+            colorgrading: 'معالجة ألوان (Color Grading)',
+            portrait: 'بورتريه وفاشون'
+        };
+
+        // Pre-loaded Professional Wedding & Editorial Sessions (Each session is a self-contained album)
+        const DEFAULT_SESSIONS = [
+            {
+                id: 'session-1',
+                title: 'سيشن زفاف ملكي — عمر & سلمى',
+                category: 'wedding',
+                meta: 'قصر محمد علي • القاهرة',
+                description: 'تغطية احترافية كاملة لسيشن الزفاف بإضاءة سينمائية دافئة تجمع بين عراقة القصور الملكية ورومانسية اللحظات العفوية.',
+                photos: [
+                    'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1000&q=85'
+                ]
+            },
+            {
+                id: 'session-2',
+                title: 'سيشن خطوبة على النيل — طارق & مريم',
+                category: 'engagement',
+                meta: 'كورنيش النيل • الزمالك',
+                description: 'أجواء مبهجة ولقطات عفوية توثق فرحة الخطوبة وقت الغروب مع معالجة لونية احترافية تبرز تفاصيل الفرحة.',
+                photos: [
+                    'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1000&q=85'
+                ]
+            },
+            {
+                id: 'session-3',
+                title: 'فوتوسيشن عروس — Royal Bridal Look',
+                category: 'bridal',
+                meta: 'فندق ماريوت • القاهرة',
+                description: 'جلسة تصوير خاصة للعروس (Bridal Session) لإبراز فخامة الفستان والتفاصيل الدقيقة بإضاءة استوديو ناعمة.',
+                photos: [
+                    'https://images.unsplash.com/photo-1594552072238-b8a33785b261?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1546193430-c2d207739ed7?auto=format&fit=crop&w=1000&q=85'
+                ]
+            },
+            {
+                id: 'session-4',
+                title: 'حفل زفاف مسائي — يوسف & نادين',
+                category: 'wedding',
+                meta: 'التجمع الخامس • القاهرة الجديدة',
+                description: 'تغطية شاملة لحفل الزفاف والـ First Dance بإضاءات احترافية تمنح كل صورة طابعاً سينمائياً خالداً.',
+                photos: [
+                    'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1000&q=85'
+                ]
+            },
+            {
+                id: 'session-5',
+                title: 'معالجة ألوان سينمائية — High-End Color Grading',
+                category: 'colorgrading',
+                meta: 'REDA AHMED Color Lab',
+                description: 'نماذج من معالجة الألوان الاحترافية وتصحيح الإضاءة والـ Skin Tones لإخراج الصور بطابع سينمائي عالمي.',
+                photos: [
+                    'https://images.unsplash.com/photo-1525258946800-98cfd641d0de?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=85'
+                ]
+            },
+            {
+                id: 'session-6',
+                title: 'بورتريه الإضاءة الذهبية — Golden Editorial',
+                category: 'portrait',
+                meta: 'REDA AHMED WEDDING Studio',
+                description: 'جلسة تصوير بورتريه وفاشون احترافية تعتمد على توزيع الإضاءة السينمائية وإبراز ملامح الشخصية بأناقة.',
+                photos: [
+                    'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1000&q=85'
+                ]
+            }
+        ];
+
+        // Color Grading Comparison Samples
+        const GRADING_SAMPLES = [
+            'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=90',
+            'https://images.unsplash.com/photo-1594552072238-b8a33785b261?auto=format&fit=crop&w=1200&q=90'
+        ];
+
+        // State Variables
+        let sessions = [];
+        let currentCategory = 'all';
+        let uploadedBase64Images = [];
+        let activeSessionPhotos = [];
+        let currentLightboxIndex = 0;
+
+        // Initialize App on Load
+        document.addEventListener('DOMContentLoaded', () => {
+            loadSessionsFromStorage();
+            renderSessionsGrid();
+            syncBeforeImageWidth();
+            window.addEventListener('resize', syncBeforeImageWidth);
+        });
+
+        // Interactive Color Grading Slider Functions
+        function updateComparisonSlider(val) {
+            document.getElementById('beforeClipLayer').style.width = val + '%';
+            document.getElementById('sliderDividerLine').style.left = val + '%';
+        }
+
+        function syncBeforeImageWidth() {
+            const container = document.getElementById('comparisonContainer');
+            const beforeImg = document.getElementById('beforeGradeImg');
+            if (container && beforeImg) {
+                beforeImg.style.width = container.offsetWidth + 'px';
+            }
+        }
+
+        function switchGradingSample(idx) {
+            const imgUrl = GRADING_SAMPLES[idx] || GRADING_SAMPLES[0];
+            document.getElementById('afterGradeImg').src = imgUrl;
+            document.getElementById('beforeGradeImg').src = imgUrl;
+            document.querySelectorAll('.grade-sample-btn').forEach((btn, i) => {
+                if (i === idx) {
+                    btn.className = 'grade-sample-btn px-4 py-2 rounded-xl text-xs font-bold bg-gold-500 text-obsidian transition-all';
+                } else {
+                    btn.className = 'grade-sample-btn px-4 py-2 rounded-xl text-xs font-semibold bg-zinc-900 text-zinc-300 border border-zinc-800 hover:border-gold-500/40 transition-all';
+                }
+            });
+        }
+
+        // Load from localStorage or use defaults
+        function loadSessionsFromStorage() {
+            try {
+                const saved = localStorage.getItem('reda_ahmed_wedding_sessions_v3');
+                if (saved) {
+                    sessions = JSON.parse(saved);
+                } else {
+                    sessions = [...DEFAULT_SESSIONS];
+                    saveSessionsToStorage();
+                }
+            } catch (e) {
+                sessions = [...DEFAULT_SESSIONS];
+            }
+        }
+
+        function saveSessionsToStorage() {
+            try {
+                localStorage.setItem('reda_ahmed_wedding_sessions_v3', JSON.stringify(sessions));
+            } catch (e) {
+                showToast('تنبيه: مساحة التخزين ممتلئة، يفضل استخدام روابط صور أو صور بحجم أصغر.');
+            }
+        }
+
+        // Render Sessions Grid (Each Session Card)
+        function renderSessionsGrid() {
+            const grid = document.getElementById('sessionsGrid');
+            const emptyState = document.getElementById('emptySessionsState');
+            const searchQuery = document.getElementById('sessionSearchInput').value.trim().toLowerCase();
+
+            const filtered = sessions.filter(session => {
+                const matchesCat = currentCategory === 'all' || session.category === currentCategory;
+                const matchesSearch = session.title.toLowerCase().includes(searchQuery) || 
+                                      (session.meta && session.meta.toLowerCase().includes(searchQuery)) ||
+                                      (session.description && session.description.toLowerCase().includes(searchQuery));
+                return matchesCat && matchesSearch;
+            });
+
+            grid.innerHTML = '';
+
+            if (filtered.length === 0) {
+                grid.classList.add('hidden');
+                emptyState.classList.remove('hidden');
+                return;
+            }
+
+            grid.classList.remove('hidden');
+            emptyState.classList.add('hidden');
+
+            filtered.forEach(session => {
+                const coverPhoto = session.photos && session.photos.length > 0 
+                    ? session.photos[0] 
+                    : 'https://placehold.co/800x600/18181d/d4af37?text=REDA+AHMED';
+                const photoCount = session.photos ? session.photos.length : 0;
+                const catName = CATEGORY_NAMES[session.category] || 'سيشن تصوير';
+
+                const card = document.createElement('article');
+                card.className = 'glass-card rounded-3xl overflow-hidden flex flex-col justify-between group cursor-pointer';
+                card.onclick = () => openSessionViewer(session.id);
+
+                card.innerHTML = `
+                    <div>
+                        <!-- Cover Image Container -->
+                        <div class="relative h-72 overflow-hidden bg-zinc-900">
+                            <img src="${coverPhoto}" 
+                                 alt="${session.title}" 
+                                 loading="lazy"
+                                 onerror="this.src='https://placehold.co/800x600/18181d/d4af37?text=REDA+AHMED'"
+                                 class="w-full h-full object-cover session-img-zoom">
+                            
+                            <!-- Gradient Overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-cardbg via-transparent to-black/40"></div>
+
+                            <!-- Top Badges -->
+                            <div class="absolute top-4 right-4 left-4 flex items-center justify-between gap-2">
+                                <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-gold-500/30 text-gold-400 text-xs font-bold">
+                                    ${catName}
+                                </span>
+                                <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-white text-xs font-semibold flex items-center gap-1.5">
+                                    <i class="fa-regular fa-images text-gold-400"></i>
+                                    <span>${photoCount} صور</span>
+                                </span>
+                            </div>
+
+                            <!-- Hover Overlay Action -->
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="px-5 py-2.5 rounded-full gold-btn font-extrabold text-xs shadow-xl transform translate-y-3 group-hover:translate-y-0 transition-transform flex items-center gap-2">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span>فتح ألبوم السيشن</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Session Details -->
+                        <div class="p-6">
+                            <div class="text-xs text-zinc-400 flex items-center gap-1.5 mb-2">
+                                <i class="fa-solid fa-location-dot text-gold-400"></i>
+                                <span>${session.meta || 'REDA AHMED Studio'}</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors line-clamp-1 mb-2">
+                                ${session.title}
+                            </h3>
+                            <p class="text-zinc-400 text-sm line-clamp-2 leading-relaxed">
+                                ${session.description || 'سيشن تصوير احترافي بعدسة رضا أحمد.'}
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card Footer -->
+                    <div class="px-6 pb-6 pt-2 flex items-center justify-between border-t border-zinc-800/60 mt-2">
+                        <span class="text-xs font-bold text-gold-400 group-hover:underline flex items-center gap-1.5">
+                            <span>عرض السيشن كامل</span>
+                            <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                        </span>
+                        <a href="https://wa.me/201102741005?text=${encodeURIComponent('أهلاً رضا أحمد، أعجبني "' + session.title + '" وأرغب في حجز سيشن مشابه')}" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           onclick="event.stopPropagation()"
+                           class="w-9 h-9 rounded-xl bg-emerald-500/15 hover:bg-emerald-500 text-emerald-400 hover:text-white flex items-center justify-center transition-colors"
+                           title="احجز سيشن مشابه عبر واتساب">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                        </a>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
+        }
+
+        // Filter Sessions by Category
+        function filterSessions(category) {
+            currentCategory = category;
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                if (btn.dataset.cat === category) {
+                    btn.className = 'filter-btn active px-5 py-2.5 rounded-xl text-sm font-bold bg-gold-500 text-obsidian transition-all';
+                } else {
+                    btn.className = 'filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold bg-zinc-900 text-zinc-300 hover:text-gold-400 border border-zinc-800 transition-all';
+                }
+            });
+            renderSessionsGrid();
+        }
+
+        // Open Individual Session Gallery Viewer
+        function openSessionViewer(sessionId) {
+            const session = sessions.find(s => s.id === sessionId);
+            if (!session) return;
+
+            document.getElementById('viewerCategoryBadge').textContent = CATEGORY_NAMES[session.category] || 'سيشن';
+            document.getElementById('viewerDateLocation').textContent = session.meta || '';
+            document.getElementById('viewerTitle').textContent = session.title;
+            document.getElementById('viewerDescription').textContent = session.description || 'تفاصيل وصور السيشن الكاملة بعدسة REDA AHMED.';
+            document.getElementById('viewerPhotoCount').textContent = `${session.photos.length} صور في هذا السيشن`;
+
+            const waMsg = `أهلاً أستاذ رضا أحمد، شاهدت ألبوم "${session.title}" على موقعك وأرغب في حجز سيشن مشابه.`;
+            document.getElementById('viewerWhatsappBtn').href = `https://wa.me/201102741005?text=${encodeURIComponent(waMsg)}`;
+
+            const photosGrid = document.getElementById('viewerPhotosGrid');
+            photosGrid.innerHTML = '';
+
+            session.photos.forEach((photoUrl, idx) => {
+                const photoItem = document.createElement('div');
+                photoItem.className = 'group relative rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800 cursor-zoom-in aspect-[4/5]';
+                photoItem.onclick = () => openLightbox(session.photos, idx);
+
+                photoItem.innerHTML = `
+                    <img src="${photoUrl}" 
+                         alt="${session.title} - صورة ${idx + 1}" 
+                         onerror="this.src='https://placehold.co/800x1000/18181d/d4af37?text=REDA+AHMED+WEDDING'"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-between p-4">
+                        <span class="text-xs font-bold text-white bg-black/60 px-2.5 py-1 rounded-lg">#${idx + 1}</span>
+                        <span class="w-9 h-9 rounded-full bg-gold-500 text-obsidian flex items-center justify-center shadow-lg">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </span>
+                    </div>
+                `;
+                photosGrid.appendChild(photoItem);
+            });
+
+            document.getElementById('sessionViewerModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeSessionViewer() {
+            document.getElementById('sessionViewerModal').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        // Single Photo Lightbox with Next/Prev Navigation
+        function openLightbox(photosArray, index) {
+            activeSessionPhotos = photosArray;
+            currentLightboxIndex = index;
+            updateLightboxUI();
+            document.getElementById('photoLightbox').classList.remove('hidden');
+        }
+
+        function updateLightboxUI() {
+            document.getElementById('lightboxImage').src = activeSessionPhotos[currentLightboxIndex];
+            document.getElementById('lightboxCounter').textContent = `${currentLightboxIndex + 1} / ${activeSessionPhotos.length}`;
+        }
+
+        function navigateLightbox(step) {
+            if (!activeSessionPhotos.length) return;
+            currentLightboxIndex = (currentLightboxIndex + step + activeSessionPhotos.length) % activeSessionPhotos.length;
+            updateLightboxUI();
+        }
+
+        function closeLightbox() {
+            document.getElementById('photoLightbox').classList.add('hidden');
+        }
+
+        // Keyboard Support for Lightbox
+        document.addEventListener('keydown', (e) => {
+            const lightbox = document.getElementById('photoLightbox');
+            if (!lightbox.classList.contains('hidden')) {
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') navigateLightbox(1);
+                if (e.key === 'ArrowRight') navigateLightbox(-1);
+            }
+        });
+
+        // ==================== STUDIO MANAGER (ADD / EDIT / DELETE SESSIONS) ====================
+        function openStudioModal() {
+            renderManageSessionsList();
+            document.getElementById('studioManagerModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeStudioModal() {
+            document.getElementById('studioManagerModal').classList.add('hidden');
+            document.body.style.overflow = '';
+            resetManagerForm();
+        }
+
+        function handleFilesPreview(event) {
+            const files = Array.from(event.target.files);
+            uploadedBase64Images = [];
+            const previewContainer = document.getElementById('uploadPreviewContainer');
+            previewContainer.innerHTML = '';
+
+            if (files.length === 0) {
+                previewContainer.classList.add('hidden');
+                return;
+            }
+
+            previewContainer.classList.remove('hidden');
+
+            files.forEach(file => {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    uploadedBase64Images.push(e.target.result);
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.className = 'w-full h-16 object-cover rounded-lg border border-gold-500/40';
+                    previewContainer.appendChild(img);
+                };
+                reader.readAsDataURL(file);
+            });
+        }
+
+        function saveNewSession(event) {
+            event.preventDefault();
+
+            const editId = document.getElementById('editSessionId').value;
+            const title = document.getElementById('newSessionTitle').value.trim();
+            const category = document.getElementById('newSessionCategory').value;
+            const meta = document.getElementById('newSessionMeta').value.trim() || 'REDA AHMED Studio';
+            const desc = document.getElementById('newSessionDesc').value.trim();
+            const rawUrls = document.getElementById('newSessionUrls').value
+                .split('\n')
+                .map(u => u.trim())
+                .filter(u => u.length > 5);
+
+            let combinedPhotos = [...uploadedBase64Images, ...rawUrls];
+
+            if (editId) {
+                const existingIdx = sessions.findIndex(s => s.id === editId);
+                if (existingIdx !== -1) {
+                    if (combinedPhotos.length === 0) {
+                        combinedPhotos = sessions[existingIdx].photos;
+                    }
+                    sessions[existingIdx] = {
+                        ...sessions[existingIdx],
+                        title,
+                        category,
+                        meta,
+                        description: desc,
+                        photos: combinedPhotos
+                    };
+                    showToast('تم تحديث بيانات السيشن بنجاح!');
+                }
+            } else {
+                if (combinedPhotos.length === 0) {
+                    combinedPhotos = [
+                        'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1000&q=85'
+                    ];
+                }
+
+                const newSession = {
+                    id: 'session-' + Date.now(),
+                    title,
+                    category,
+                    meta,
+                    description: desc,
+                    photos: combinedPhotos
+                };
+
+                sessions.unshift(newSession);
+                showToast('تم إضافة السيشن الجديد بنجاح!');
+            }
+
+            saveSessionsToStorage();
+            renderSessionsGrid();
+            renderManageSessionsList();
+            resetManagerForm();
+        }
+
+        function editSessionItem(sessionId) {
+            const session = sessions.find(s => s.id === sessionId);
+            if (!session) return;
+
+            document.getElementById('editSessionId').value = session.id;
+            document.getElementById('newSessionTitle').value = session.title;
+            document.getElementById('newSessionCategory').value = session.category;
+            document.getElementById('newSessionMeta').value = session.meta || '';
+            document.getElementById('newSessionDesc').value = session.description || '';
+            
+            const urlOnly = session.photos.filter(p => p.startsWith('http'));
+            document.getElementById('newSessionUrls').value = urlOnly.join('\n');
+            
+            document.getElementById('saveSessionBtn').innerHTML = '<i class="fa-solid fa-check"></i><span>حفظ التعديلات</span>';
+        }
+
+        function deleteSessionItem(sessionId) {
+            sessions = sessions.filter(s => s.id !== sessionId);
+            saveSessionsToStorage();
+            renderSessionsGrid();
+            renderManageSessionsList();
+            showToast('تم حذف السيشن.');
+        }
+
+        function restoreDefaultSessions() {
+            sessions = [...DEFAULT_SESSIONS];
+            saveSessionsToStorage();
+            renderSessionsGrid();
+            renderManageSessionsList();
+            showToast('تمت استعادة السيشنات الافتراضية بنجاح.');
+        }
+
+        function resetManagerForm() {
+            document.getElementById('sessionManagerForm').reset();
+            document.getElementById('editSessionId').value = '';
+            uploadedBase64Images = [];
+            const previewContainer = document.getElementById('uploadPreviewContainer');
+            previewContainer.innerHTML = '';
+            previewContainer.classList.add('hidden');
+            document.getElementById('saveSessionBtn').innerHTML = '<i class="fa-solid fa-floppy-disk"></i><span>حفظ ونشر السيشن</span>';
+        }
+
+        function renderManageSessionsList() {
+            const listEl = document.getElementById('manageSessionsList');
+            document.getElementById('manageCount').textContent = sessions.length;
+            listEl.innerHTML = '';
+
+            sessions.forEach(s => {
+                const row = document.createElement('div');
+                row.className = 'flex items-center justify-between gap-3 bg-zinc-900/90 p-3 rounded-xl border border-zinc-800';
+                row.innerHTML = `
+                    <div class="flex items-center gap-3 min-w-0">
+                        <img src="${s.photos[0] || ''}" onerror="this.src='https://placehold.co/100x100/18181d/d4af37?text=RA'" class="w-11 h-11 rounded-lg object-cover shrink-0">
+                        <div class="min-w-0">
+                            <div class="text-sm font-bold text-white truncate">${s.title}</div>
+                            <div class="text-xs text-zinc-400">${CATEGORY_NAMES[s.category] || ''} • ${s.photos.length} صور</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 shrink-0">
+                        <button type="button" onclick="editSessionItem('${s.id}')" class="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-gold-500 hover:text-obsidian text-gold-400 text-xs font-bold transition-colors">
+                            تعديل
+                        </button>
+                        <button type="button" onclick="deleteSessionItem('${s.id}')" class="px-3 py-1.5 rounded-lg bg-red-500/10 hover:bg-red-500 text-red-400 hover:text-white text-xs font-bold transition-colors">
+                            حذف
+                        </button>
+                    </div>
+                `;
+                listEl.appendChild(row);
+            });
+        }
+
+        // ==================== CONTACT & BOOKING HELPERS ====================
+        function handleBookingSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('clientName').value.trim();
+            const phone = document.getElementById('clientPhone').value.trim();
+            const type = document.getElementById('sessionType').value;
+            const date = document.getElementById('sessionDate').value;
+            const notes = document.getElementById('sessionNotes').value.trim();
+
+            let message = `أهلاً REDA AHMED WEDDING، أرغب في حجز سيشن تصوير احترافي:\n`;
+            message += `• الاسم: ${name}\n`;
+            message += `• رقم الهاتف: ${phone}\n`;
+            message += `• نوع السيشن / المناسبة: ${type}\n`;
+            if (date) message += `• التاريخ المقترح: ${date}\n`;
+            if (notes) message += `• تفاصيل إضافية: ${notes}\n`;
+
+            const whatsappUrl = `https://wa.me/201102741005?text=${encodeURIComponent(message)}`;
+            showToast('جاري تحويلك إلى واتساب لإرسال تفاصيل الحجز...');
+            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+        }
+
+        function quickBookPackage(packageName) {
+            const selectEl = document.getElementById('sessionType');
+            const notesEl = document.getElementById('sessionNotes');
+            notesEl.value = `أرغب في الاستفسار عن تفاصيل وحجز: ${packageName}`;
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            showToast(`تم اختيار "${packageName}" — أكمل بياناتك للحجز`);
+        }
+
+        function copyPhoneNumber() {
+            const tempInput = document.createElement('input');
+            tempInput.value = '01102741005';
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            showToast('تم نسخ الرقم 01102741005 بنجاح!');
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toastNotification');
+            document.getElementById('toastMessage').textContent = msg;
+            toast.classList.remove('hidden');
+            clearTimeout(window.toastTimer);
+            window.toastTimer = setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3500);
+        }
+    </script>
+</body>
+</html>
